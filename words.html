@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Words have something to say</title>
+</head>
+<body>
+
+<style>
+*{
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: center;
+}
+
+.button {
+  background-color: #ff7b00;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<h1>Welcome to Words Have Something To Say! :-)</h1>
+<h2>We give Inspiring, fun, and cheerful words, sentences, or quotes everyday!</h2>
+<button onclick="wordfunc()" class="button">Gimme a word, sentence, or quote!</button>
+<br><br>
+<p>This website is Maintainted by leodenglovescode on</p> <a href="https://github.com/leodenglovescode">Github</a> <p>go to my website</p> <a href="https://leodenglovescode.github.io/leodeng">here</a>
+<script>
+function wordfunc() {
+var textArray = [
+  "pneumonoultramicroscopicsilicovolcanoconiosis",
+  "Light-hearted",
+  "YOLO",
+  "Enjoy",
+  "BE HAPPY",
+  "Delighted",
+  "Don't join a rat race!",
+  "WOW",
+  "“All our dreams can come true, if we have the courage to pursue them.” – Walt Disney",
+  "“The best time to plant a tree was 20 years ago. The second best time is now.” – Chinese Proverb",
+  "“We need to accept that we won’t always make the right decisions, that we’ll screw up royally sometimes – understanding that failure is not the opposite of success, it’s part of success.” – Arianna Huffington",
+  "“Do what you feel in your heart to be right – for you’ll be criticized anyway.”― Eleanor Roosevelt",
+  "“Smart people learn from everything and everyone, average people from their experiences, stupid people already have all the answers.” – Socrates",
+  "“Whatever you are, be a good one.” ― Abraham Lincoln",
+  "“If something is important enough, even if the odds are stacked against you, you should still do it.” – Elon Musk"
+
+];
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+var index = getRandomInt(15)
+var text = textArray[index]
+alert(text)
+}
+getElementById('time').innerHTML = Date() 
+</script>
+<p id="time"></p>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+</body>
+</html>
